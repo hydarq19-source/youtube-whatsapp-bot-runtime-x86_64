@@ -1,7 +1,6 @@
 .env
 .env.*
 !.env.example
-libraries/yt-dlp
 cookies.txt
 youtube-cookies.txt
 whatsapp_bot.db*
