@@ -6,4 +6,6 @@ This bundle includes the bot, Deno, and the latest yt-dlp release at packaging t
 
 For YouTube bot verification, set YOUTUBE_COOKIES_FILE in .env to a Netscape-format cookies file. Cookies and account session files are private and are not included.
 
+Video download throughput is limited by default to 3 MiB/s to reduce CPU spikes on constrained hosts. Change YOUTUBE_DOWNLOAD_LIMIT_MIB_S in .env to a lower value for lower load or a higher value for faster downloads. Lower throughput may reduce CPU use but increases download time.
+
 Requires Linux x86_64 with glibc and Python 3 for first-run phone-number setup.
